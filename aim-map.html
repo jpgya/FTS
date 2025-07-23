@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>編集練習マップ | Fortnite Training Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    /* ページ種別を JS に渡してフィルタリング */
+    window.PAGE_TYPE = 'aim';
+  </script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <!-- 共通ヘッダー -->
+  <header class="site-header glass">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">FTS</a></h1>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="edit-map.html" class="active">編集練習</a>
+        <a href="aim.html">AIM強化</a>
+        <a href="vod-review.html">VOD反省</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h2>編集練習マップ</h2>
+        <p>ピースコントロールから高速リセットまで、厳選マップをコード付きで。</p>
+        <input id="searchInput" class="search-box" type="search" placeholder="マップ名・作者で検索…" />
+      </div>
+    </section>
+
+    <section class="map-list container" id="mapList">
+      <!-- JS でカードを注入 -->
+      <p class="loading">Loading maps…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer glass">
+    <p>© 2025 Jpgya — Fortnite Training Support</p>
+  </footer>
+</body>
+</html>
