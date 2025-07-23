@@ -101,3 +101,33 @@ a{color:var(--primary);text-decoration:none;transition:var(--transition)}
 .loading{text-align:center;padding:60px 0;font-weight:600}
 .glass{background:var(--glass);backdrop-filter:blur(10px)}
 .sp-only{display:none}@media(max-width:640px){.sp-only{display:inline}}
+
+.site-alert {
+  background-color: #f87171; /* 赤系 */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: slideDown 0.4s ease;
+}
+.alert-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
