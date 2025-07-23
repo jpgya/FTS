@@ -1,0 +1,50 @@
+[
+  {
+    "id": "edit1",
+    "title": "Ultimate Piece Control",
+    "creator": "Raider464",
+    "code": "1234-5678-9012",
+    "thumbnail": "https://img.example.com/edit1.jpg",
+    "type": "edit"
+  },
+  {
+    "id": "edit2",
+    "title": "Triple Edit Course v2",
+    "creator": "Candook",
+    "code": "1111-2222-3333",
+    "thumbnail": "https://img.example.com/edit2.jpg",
+    "type": "edit"
+  },
+  {
+    "id": "edit3",
+    "title": "Reset Master",
+    "creator": "Teadoh",
+    "code": "4444-5555-6666",
+    "thumbnail": "https://img.example.com/edit3.jpg",
+    "type": "edit"
+  },
+  {
+    "id": "aim1",
+    "title": "Tracking God",
+    "creator": "Skaavok",
+    "code": "7777-8888-9999",
+    "thumbnail": "https://img.example.com/aim1.jpg",
+    "type": "aim"
+  },
+  {
+    "id": "aim2",
+    "title": "Flickshot Warm-up",
+    "creator": "Donwozi",
+    "code": "0000-1122-3344",
+    "thumbnail": "https://img.example.com/aim2.jpg",
+    "type": "aim"
+  },
+  {
+    "id": "aim3",
+    "title": "Shotgun Aim Trainer",
+    "creator": "Sxvxn",
+    "code": "5566-7788-9900",
+    "thumbnail": "https://img.example.com/aim3.jpg",
+    "type": "aim"
+  }
+]
