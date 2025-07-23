@@ -1,0 +1,103 @@
+/* ---------- CSS 変数 ---------- */
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --bg:#f8fafc;
+  --text:#333;
+  --radius:12px;
+  --shadow:0 8px 24px rgba(0,0,0,.06);
+  --transition:.3s ease;
+  --glass:rgba(255,255,255,.65);
+}
+
+/* ---------- リセット ---------- */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Outfit',sans-serif;
+  background:linear-gradient(135deg,#eef2ff,#ffffff);
+  color:var(--text);
+  line-height:1.7;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+img{max-width:100%;display:block}
+a{color:var(--primary);text-decoration:none;transition:var(--transition)}
+.container{width:min(90%,1200px);margin-inline:auto}
+
+/* ---------- ヘッダー ---------- */
+.site-header{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:blur(10px);
+  background:var(--glass);
+  box-shadow:var(--shadow);
+}
+.logo{font-size:1.4rem;font-weight:700;color:var(--primary)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.site-nav a{margin-left:1rem;font-weight:600;padding:.4rem .6rem;border-radius:6px}
+.site-nav a.active, .site-nav a:hover{background:var(--primary);color:#fff;}
+
+/* ---------- ヒーロー ---------- */
+.hero{padding:120px 0;text-align:center}
+.hero h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;color:var(--primary-dark)}
+.hero p{font-size:1.1rem;margin-bottom:2rem}
+.btn-primary,.btn-outline{
+  display:inline-block;padding:.9rem 2.2rem;border-radius:var(--radius);font-weight:600;
+  transition:var(--transition)
+}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-primary:hover{background:var(--primary-dark)}
+.btn-outline{border:2px solid var(--primary);color:var(--primary);background:transparent}
+.btn-outline:hover{background:var(--primary);color:#fff}
+
+/* ---------- Features ---------- */
+.features{padding:80px 0}
+.grid-3{display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.feature-card{
+  background:var(--glass);backdrop-filter:blur(10px);
+  border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);
+  transition:var(--transition)
+}
+.feature-card:hover{transform:translateY(-4px);}
+
+/* ---------- CTA ---------- */
+.cta{padding:100px 0;text-align:center}
+.cta h2{font-size:2rem;margin-bottom:1.5rem;color:var(--primary-dark)}
+
+/* ---------- Footer ---------- */
+.site-footer{margin-top:auto;text-align:center;padding:40px 0;font-size:.9rem;background:var(--glass);backdrop-filter:blur(10px)}
+
+/* ---------- Page Hero ---------- */
+.page-hero{padding:90px 0 50px;text-align:center}
+.page-hero h2{font-size:2.2rem;margin-bottom:.6rem;color:var(--primary-dark)}
+.search-box{
+  margin-top:20px;padding:.8rem 1rem;width:100%;max-width:400px;border:2px solid var(--primary);
+  border-radius:var(--radius);font-size:1rem
+}
+
+/* ---------- Map Cards ---------- */
+.map-list{display:grid;gap:30px;margin-bottom:100px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.map-card{
+  background:var(--glass);border-radius:var(--radius);box-shadow:var(--shadow);
+  overflow:hidden;display:flex;flex-direction:column;transition:var(--transition)
+}
+.map-card:hover{transform:translateY(-4px)}
+.map-thumb{height:140px;object-fit:cover;width:100%}
+.map-body{padding:1rem 1.3rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.map-title{font-size:1.1rem;font-weight:600}
+.map-code{font-family:monospace;background:#fff;border-radius:6px;padding:.2rem .5rem;display:inline-block}
+.map-copy{align-self:flex-start;margin-top:auto}
+
+/* ---------- Vod Form ---------- */
+.vod-form{display:flex;flex-direction:column;gap:1rem;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+.vod-form label{display:flex;flex-direction:column;font-weight:600;gap:.4rem}
+.vod-form textarea,.vod-form input{
+  font-size:1rem;padding:.7rem;border:2px solid var(--primary);border-radius:var(--radius)
+}
+.form-actions{display:flex;gap:1rem;margin-top:.5rem}
+.status-msg{margin-top:1rem;font-size:.9rem;color:var(--primary-dark)}
+
+/* ---------- Utilities ---------- */
+.loading{text-align:center;padding:60px 0;font-weight:600}
+.glass{background:var(--glass);backdrop-filter:blur(10px)}
+.sp-only{display:none}@media(max-width:640px){.sp-only{display:inline}}
