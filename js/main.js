@@ -30,7 +30,7 @@ async function loadMaps(type) {
 
     render(maps);
   } catch (err) {
-    listEl.innerHTML = '<p class="loading">読み込みに失敗しました…</p>';
+    listEl.innerHTML = '<p class="loading">The map could not be loaded due to some bug. Please contact Vigyan of FN ASIA SCRIM.</p>';
   }
 
   function render(arr) {
